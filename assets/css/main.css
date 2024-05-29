@@ -168,7 +168,9 @@ li,
 	typography css start 
 ---------------------------------*/
 body {
-  font-family: var(--tp-ff-body);
+  /* font-family: var(--tp-ff-body); */
+  font-family: 'Roboto', sans-serif !important;
+
   font-size: 18px;
   font-weight: normal;
   color: var(--tp-text-body);
@@ -185,7 +187,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--tp-ff-heading);
+  /* font-family: var(--tp-ff-heading); */
+  font-family: 'Roboto', sans-serif !important;
   color: var(--tp-common-black);
   margin-top: 0px;
   font-weight: 600;
@@ -227,7 +230,8 @@ ul {
 }
 
 p {
-  font-family: var(--tp-ff-p);
+  /* font-family: var(--tp-ff-p); */
+  font-family: 'Roboto', sans-serif !important;
   color: var(--tp-text-body);
   font-weight: 400;
   font-size: 18px;
@@ -2120,7 +2124,7 @@ div.demo img {
 }
 
 .black-bg {
-  background-color: #578b07;
+  background-color: #181818;
 }
 
 .theme-bg {
@@ -2503,7 +2507,7 @@ div.demo img {
   width: 480px;
   bottom: 0;
   box-shadow: 0 16px -32px 0 rgba(0, 0, 0, 0.8);
-  background-color: var(--tp-common-black);
+  background-color: #fff;
   z-index: 999999;
   padding: 50px;
   scrollbar-width: none;
@@ -2624,7 +2628,7 @@ div.demo img {
   color: var(--tp-theme-1);
 }
 .tpoffcanvas__logo {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tpoffcanvas__logo {
@@ -2808,7 +2812,8 @@ div.demo img {
   padding-right: 60px;
   transition: 0.3s;
   border-radius: 6px 6px 0 0;
-  font-family: var(--tp-ff-heading);
+  /* font-family: var(--tp-ff-heading); */
+  font-family: 'Roboto', sans-serif !important;
   color: var(--tp-common-white);
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -2856,6 +2861,7 @@ div.demo img {
   background-color: rgba(24, 24, 24, 0.3);
   border-bottom: 1px solid transparent;
 }
+
 .tp-custom-accordion .accordion-buttons.collapsed::after {
   content: "\f067";
   color: #046bb2;
@@ -3180,8 +3186,8 @@ div.demo img {
 }
 
 .tp-section-title {
-  font-weight: 700;
-  font-size: 44px;
+  font-weight: 600;
+  font-size: 40px;
   line-height: 1.2;
   color: var(--tp-common-black);
 }
@@ -5628,8 +5634,8 @@ body .ui-tooltip {
   margin-left: 25px;
   font-size: 18px;
   border-radius: 4px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #016bb5;
+  border: 1px solid #016dae;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-header-style-2 .tp-header-bar-2 i {
@@ -5701,7 +5707,7 @@ body .ui-tooltip {
 }
 .tp-header-style-3 .tp-header-main-menu > nav > ul > li .submenu {
   left: -45px;
-  border-top: 5px solid var(--tp-theme-2);
+  border-top:5px solid #8eba3f;
 }
 .tp-header-style-3 .tp-header-main-menu > nav > ul > li > a {
   padding: 20px 0;
@@ -5709,7 +5715,7 @@ body .ui-tooltip {
   z-index: 1;
 }
 .tp-header-style-3 .tp-header-main-menu > nav > ul > li:hover > a {
-  color: var(--tp-theme-2);
+  color: #fff;
 }
 .tp-header-style-3 .tp-header-right {
   margin-right: -40px;
@@ -5927,7 +5933,7 @@ body .ui-tooltip {
 .tp-main-menu-mobile ul li > a {
   display: block;
   font-size: 16px;
-  color: var(--tp-common-white);
+  color: #000;
   position: relative;
   padding: 10px 0;
   padding-right: 20px;
@@ -7093,6 +7099,7 @@ body .ui-tooltip {
   border-radius: 0 0 12px 12px;
   background: var(--tp-common-white);
   box-shadow: 0px 16px 20px rgba(1, 16, 61, 0.1);
+  height: 100%;
 }
 .tp-blog-item:hover .tp-blog-thumb img {
   transform: scale(1.2);
@@ -7132,8 +7139,8 @@ body .ui-tooltip {
 .tp-blog-title {
   font-weight: 600;
   font-size: 24px;
-  line-height: 1.3;
-  padding-bottom: 10px;
+  line-height: 1.1;
+  padding-bottom: 5px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-blog-title {
@@ -7142,7 +7149,7 @@ body .ui-tooltip {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-blog-title {
-    font-size: 22px;
+    font-size: 21px;
   }
 }
 .tp-blog-title a {
@@ -7159,10 +7166,14 @@ body .ui-tooltip {
 }
 .tp-blog-content p {
   margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif !important;
+
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-blog-content p {
     font-size: 16px;
+    font-family: 'Roboto', sans-serif !important;
+
   }
 }
 .tp-blog-link {
@@ -7752,7 +7763,7 @@ body .ui-tooltip {
 }
 
 .tp-copyright-height {
-  padding: 57px 0;
+  padding: 20px 0;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-copyright-height {
@@ -12083,7 +12094,7 @@ p.checkout-coupon input[type=text]:focus {
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-contact-2-right {
     margin-left: 0;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 }
 .tp-contact-2-right-content {
@@ -15103,6 +15114,9 @@ p.checkout-coupon input[type=text]:focus {
   .tp-choose-area {
     padding: 50px 0px;
 }
+.tp-decorate-thumb-sm img {
+display: none;
+}
 }
 @media only screen and (min-width: 400px) and (max-width: 575px) {
   .tp-error-content .tp-section-title {
@@ -15127,4 +15141,24 @@ p.checkout-coupon input[type=text]:focus {
 }
 .tp-faq-area{
   padding: 80px 0px;
+}
+@media (max-width: 1200px) {
+.tp-header-top-style-3.tp-header-top-height {
+display: none;
+}
+.tp-header-style-2::after {
+background-color: white;
+}
+.head-row {
+  justify-content: space-around;
+}
+}
+.tp-custom-accordion {
+
+  backdrop-filter: blur(25px);
+  background-color: rgba(24, 24, 24, 0.3);
+}
+.tp-brand-thumb img{
+  border: 1px solid #000;
+  border-radius: 10px;
 }
